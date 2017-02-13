@@ -1,0 +1,19 @@
+---
+- name: "Create virtual machine: {{ item.name }}"
+  azure_rm_virtualmachine:
+    resource_group: "{{ resource_group }}"
+    name: "{{ item.name }}"
+    vm_size: "{{ item.vm_size }}"
+    image:
+      offer: "{{ image.offer }}"
+      publisher: "{{ image.publisher }}"
+      sku: "{{ image.sku }}"
+      version: "{{ image.version }}"
+    storage_account: "{{ storage_account }}"
+    virtual_network_name: "{{ virtual_network_name }}"
+    subnet_name: "{{ subnet_name }}"
+    admin_username: "{{ item.admin_username }}"
+    ssh_public_keys:
+      - path: "{{ item.key_path }}"
+        key_data: "{{ item.key_data }}"
+  with_items: "{{ machines }}"

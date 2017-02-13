@@ -1,0 +1,13 @@
+---
+
+storage_account: srkaystorage
+diagnostics_storage_account: srkaydiagnostics
+location: "Central India"
+virtual_network_name: "SRKay"
+resource_group: SRKay
+
+image:
+  offer: UbuntuServer
+  publisher: Canonical
+  sku: 16.04-LTS
+  version: "16.04.201702020"

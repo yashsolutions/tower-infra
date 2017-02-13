@@ -1,0 +1,20 @@
+---
+vnets:
+  - name: SRKay
+    range: 10.0.0.0/16
+
+subnets:
+  - name: control
+    range: 10.0.1.0/24
+
+  - name: internal_swarm
+    range: 10.0.2.0/24
+
+  - name: prod_swarm
+    range: 10.0.3.0/24
+
+  - name: expose
+    range: 10.0.4.0/24
+
+  - name: elasticsearch
+    range: 10.0.5.0/24

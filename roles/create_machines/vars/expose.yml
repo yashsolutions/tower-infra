@@ -1,0 +1,10 @@
+---
+subnet_name: expose
+
+machines:
+  - name: bastion
+    vm_size: Basic_A1
+    image: 
+    admin_username: devops
+    key_path: "../SRKayKeys/srkay-authorized-on-bastion"
+    key_data: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDTSg8wBsmg0OOfXkgpkovLx/UrBuly9odTig2pu9O8xWg27outVeyw8byZK5AVAMukVZBJBNzZ/b+si85gM4fxlzJj8bJ+hdk+yMKjxYCRA9bkVLvff+d1EYp4SUlGU80Gtlnikx+swF8A9h3guebycr99muNGANOulhl/gB/Lq/eRyHlJVFENh16B1t/oEdWHrxlTKe+K/5qCgFHvtyzkqAetZwfCM0LdTj5o2n2OPpsyAK+5yzYzkWoSdrdqRsrAC2NX+Sn3jv321KLmmrrYZRTPfsbl8cJDI4SUpd/ObYOrR3k7MpxZZeQ4Zx08qR7RRVERSbjT8DSP0E7l7MaJ srkay-bastion"

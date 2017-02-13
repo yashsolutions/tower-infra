@@ -1,0 +1,4 @@
+---
+
+- include_vars: "{{ type }}.yml"
+- include: "{{ type }}.yml"

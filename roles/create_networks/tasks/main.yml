@@ -1,0 +1,7 @@
+- name: Add subnet
+  azure_rm_subnet:
+    resource_group: SRKay
+    name: "{{ item.name }}"
+    address_prefix: "{{ item.range }}"
+    virtual_network: SRKay
+  with_items: "{{ subnets }}"
