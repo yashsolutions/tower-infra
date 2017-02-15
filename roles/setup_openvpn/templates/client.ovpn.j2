@@ -1,0 +1,24 @@
+tls-client
+{% if openvpn_auth_enable %}
+auth-user-pass
+{% endif %}
+dev {{ openvpn_dev }}
+;dev-node MyTap
+proto {{ openvpn_proto }}
+remote {{ openvpn_remote_host }} {{ openvpn_remote_port }}
+resolv-retry infinite
+nobind
+persist-key
+persist-tun
+pull
+ns-cert-type server
+comp-lzo
+verb 3
+
+<ca>
+{{ ca_certificate.content | b64decode -}}
+</ca>
+<cert>
+</cert>
+<key>
+</key>

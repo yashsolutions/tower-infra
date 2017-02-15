@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Kevin Brebanov
+  description: Installs and configures OpenVPN
+  company:
+  license: BSD
+  min_ansible_version: 1.9
+  github_branch: master
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+  galaxy_tags:
+  - networking
+dependencies:
+  - { role: kbrebanov.easy_rsa, when: openvpn_server and not openvpn_static }

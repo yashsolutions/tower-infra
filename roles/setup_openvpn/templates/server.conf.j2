@@ -1,0 +1,67 @@
+# {{ ansible_managed }}
+
+{% if not openvpn_static %}
+ca ca.crt
+{% endif %}
+{% if not openvpn_static %}
+cert {{ easy_rsa_key_name }}.crt
+{% endif %}
+{% if openvpn_comp_lzo %}
+comp-lzo
+{% endif %}
+{% if not openvpn_static %}
+crl-verify crl.pem
+{% endif %}
+{% if openvpn_daemon %}
+daemon
+{% endif %}
+dev {{ openvpn_dev }}
+{% if not openvpn_static %}
+dh dh{{ easy_rsa_key_size }}.pem
+{% endif %}
+{% if openvpn_static %}
+ifconfig {{ openvpn_server_ifconfig }}
+{% endif %}
+{% if openvpn_ifconfig_pool_persist %}
+ifconfig-pool-persist {{ openvpn_ifconfig_pool_persist }}
+{% endif %}
+group {{ openvpn_group }}
+{% if openvpn_keepalive %}
+keepalive {{ openvpn_keepalive }}
+{% endif %}
+{% if not openvpn_static %}
+key {{ easy_rsa_key_name }}.key
+{% endif %}
+{% if openvpn_persist_key %}
+persist-key
+{% endif %}
+{% if openvpn_persist_tun %}
+persist-tun
+{% endif %}
+{% if openvpn_ping_timer_rem %}
+ping-timer-rem
+{% endif %}
+{% if openvpn_auth_enable %}
+plugin /usr/lib/openvpn/openvpn-plugin-auth-pam.so login
+{% endif %}
+{% if not openvpn_static and openvpn_dhcp_option_dns %}
+{% for dns in openvpn_dhcp_option_dns %}
+push "dhcp-option DNS {{ dns }}"
+{% endfor %}
+{% endif %}
+{% if not openvpn_static and openvpn_redirect_gateway %}
+push "redirect-gateway def1 bypass-dhcp"
+{% endif %}
+{% if openvpn_static %}
+secret {{ openvpn_secret_file }}
+{% endif %}
+{% if not openvpn_static %}
+server {{ openvpn_server_subnet }} {{ openvpn_server_subnet_mask }}
+{% endif %}
+{% if openvpn_status %}
+status {{ openvpn_status }}
+{% endif %}
+{% if not openvpn_static %}
+tls-server
+{% endif %}
+user {{ openvpn_user }}
