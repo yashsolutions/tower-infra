@@ -3,4 +3,4 @@
 - name: "Provision a Docker Swarm cluster"
   hosts: docker_engine
   roles:
-    - { role: ansible-dockerswarm }
+    - { role: setup_dockerswarm }
