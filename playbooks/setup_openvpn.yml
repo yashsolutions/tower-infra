@@ -3,4 +3,4 @@
 - hosts: openvpn
   become: true
   roles:
-  - { role: openvpn }
+  - { role: setup_openvpn }
