@@ -1,0 +1,15 @@
+openvpn ansible_host=10.0.4.6
+swarm-01 ansible_host=10.0.2.5
+swarm-02 ansible_host=10.0.2.6
+
+[docker_engine]
+swarm-01
+swarm-02
+
+[docker_swarm_manager]
+swarm-01
+
+[docker_swarm_worker]
+swarm-01
+swarm-02
+

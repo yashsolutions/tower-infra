@@ -1,5 +1,6 @@
 ---
 
-- hosts: localhost
+- hosts: openvpn
+  become: true
   roles:
-  - { role: create_machines, type: expose }
+  - { role: openvpn }
