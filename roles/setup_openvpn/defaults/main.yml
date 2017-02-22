@@ -75,3 +75,5 @@ openvpn_simple_auth_password: ""
 
 # Whether to embed CA, cert, and key info inside client OVPN config file.
 openvpn_unified_client_profiles: yes
+openvpn_routes:
+  - "10.0.1.0 255.255.255.0"
