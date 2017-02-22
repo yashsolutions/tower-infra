@@ -170,5 +170,5 @@ crl-verify {{openvpn_keydir}}/crl.pem
 {% endif %}
 
 {% for route in openvpn_routes %}
-push "{{route}}"
+push "route {{route}}"
 {% endfor %}
