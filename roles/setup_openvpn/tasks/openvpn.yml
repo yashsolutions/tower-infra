@@ -20,6 +20,15 @@
 
 - include: setup-bridge.yml
 
+- name: setup firewall rules
+  template:
+    src: firewall_rules
+    dest: /tmp/firewall_rules
+    mode: 0700
+
+- name: apply firewall rules
+  command: /tmp/firewall_rules
+
 - name: Ensure OpenVPN is started
   service: name={{openvpn_service}} state=started enabled=yes
 
