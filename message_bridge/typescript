@@ -1,612 +1,0 @@
-Script started on Friday 24 February 2017 01:24:58 PM IST
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2998  0.0  0.2  14228  1004 pts/3    S+   13:25   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ pkill script
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ pkill script[8@s aux | grep[C[C[C[C[C[C[Cssh devops@52.172.152.154[5Pps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3001  0.0  0.2  14228  1032 pts/3    S+   13:25   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ kill 2966 2977
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ kill 2966 2977ps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3003  0.0  0.1  14228   932 pts/3    S+   13:25   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ls
-[0m[01;32mmessage_consumer.py[0m  [01;32mRedisQueue.py[0m  [01;32mRedisQueue.pyc[0m  [01;32mtypescript[0m
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ rm -rf typescript 
-rm: cannot remove 'typescript': Text file busy
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ kill 2966
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ kill 2966rm -rf typescript ls[Krm -rf typescript [9Pkill 2966rm -rf typescript ls[Kps aux | grep script[6Pkill 2966 2977ps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3009  0.0  0.1  14228   936 pts/3    S+   13:28   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ sudo kill 2966
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ sudo kill 2966ps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3013  0.0  0.1  14228   964 pts/3    S+   13:28   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps aux | grep script[6Psudo kill 2966[K[K77
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ sudo kill 2977ps aux | grep script
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3017  0.0  0.1  14228   956 pts/3    S+   13:29   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script_name | grep -v grep | awk '{ print $1 }'` && killall inotifywait[1P[1P[1P[1P[1P
-ashish: no process found
-ashish: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $1 }'` && killall inotifywait[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps aux | grep script[K
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3025  0.0  0.2  14228  1012 pts/3    S+   13:30   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps aux | grep scriptkillall `ps -aux | grep script | grep -v grep | awk '{ print $1 }'` && killall inotifywait[C[1P[1@`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@`[C
-ashish: no process found
-ashish: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $1 }'` && killall inotifywait[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[C[1P[1P[1P[1P[1P[1P[1P[1P[1P
-ashish
-ashish
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps -aux | grep script | grep -v grep | awk '{ print $1 }'[1P }'2 }'
-2966
-2977
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps -aux | grep script | grep -v grep | awk '{ print $2 }'1[C[C[Ckillall `ps -aux | grep script | grep -v grep | awk '{ print $1 }'` && killall inotifywait[1P[1@2
-2966: no process found
-2977: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $2 }'` && killall inotifywait[C[C[C[1P[1@1[1@1
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait
-script: no process found
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ killall `ps -aux | grep script | grep -v grep | awk '{ print $11 }'` && killall inotifywait[1P2[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[33Pps -aux | grep script | grep -v grep | awk '{ print $2 }'1[C[C[C2[C[C[C1[C[C[Ckillall `ps -aux | grep script | grep -v grep | awk '{ print $1 }'` && killall inotifywait[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cps aux | grep script[K
-ashish    2966  0.0  0.4  22040  2368 pts/1    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    2977  0.0  0.4  22040  2500 pts/2    S+   13:24   0:00 [01;31m[Kscript[m[K
-ashish    3119  0.0  0.2  14228  1008 pts/3    S+   13:32   0:00 grep --color=auto [01;31m[Kscript[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ pyton [K[K[Khon message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^Z
-[1]+  Stopped                 python message_consumer.py
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ bg
-[1]+ python message_consumer.py &
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps au z[K[Kx | grep run
-root       969  0.0  0.1  16124   864 ?        Ss   12:16   0:00 /sbin/dhclient -1 -v -pf /[01;31m[Krun[m[K/dhclient.enp0s3.pid -lf /var/lib/dhcp/dhclient.enp0s3.leases -I -df /var/lib/dhcp/dhclient6.enp0s3.leases enp0s3
-root      1000  0.0  0.5  16120  2876 ?        Ss   12:16   0:00 /sbin/dhclient -1 -v -pf /[01;31m[Krun[m[K/dhclient.enp0s8.pid -lf /var/lib/dhcp/dhclient.enp0s8.leases -I -df /var/lib/dhcp/dhclient6.enp0s8.leases enp0s8
-root      1146  0.0  0.0  13376   168 ?        Ss   12:16   0:00 /sbin/mdadm --monitor --pid-file /[01;31m[Krun[m[K/mdadm/monitor.pid --daemonise --scan --syslog
-root      1280  0.0  0.5 256748  2808 ?        Sl   12:16   0:01 /usr/sbin/VBoxService --pidfile /var/[01;31m[Krun[m[K/vboxadd-service.sh
-ashish    3146  0.0  0.1  14228   904 pts/3    S+   13:45   0:00 grep --color=auto [01;31m[Krun[m[K
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ps aux | grep runbg[Kpython message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ cat message_consumer.py 
-from RedisQueue import RedisQueue
-import subprocess
-import json
-import base64
-
-q = RedisQueue('job-identifier', namespace='ansible', host='localhost', port=6379, db=0)
-
-q.put({
-		'job': 'build',
-		'build_id': 123,
-		'call_id': 1234,
-		'action': 'run_playbook',
-		'with_vars': {
-			'alpha': 1,
-			'beta': 2
-		}
-	})
-
-while True:
-	res = q.get()
-	print res
-	print type(res)
-	subprocess.Popen(["run_ansible_controller.sh", base64.b64encode(json.dumps(res))])
-	print 'END'
-	break]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ cat message_consumer.py [3@python[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py [3Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@python[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3Pcat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@python[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ pyton[K[Khon
-Python 2.7.12 (default, Nov 19 2016, 06:48:10) 
-[GCC 5.4.0 20160609] on linux2
-Type "help", "copyright", "credits" or "license" for more information.
->>> type('abc')
-<type 'str'>
->>> print ty[e[K[Kpe()')')a')b')c')[C[C
-<type 'str'>
->>> exit()
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ cat e[Kmessage_consumer.py 
-from RedisQueue import RedisQueue
-import subprocess
-import json
-import base64
-
-q = RedisQueue('job-identifier', namespace='ansible', host='localhost', port=6379, db=0)
-
-q.put({
-		'job': 'build',
-		'build_id': 123,
-		'call_id': 1234,
-		'action': 'run_playbook',
-		'with_vars': {
-			'alpha': 1,
-			'beta': 2
-		}
-	})
-
-while True:
-	res = q.get()
-	print type(res)
-	print res
-	print type(res)
-	#subprocess.Popen(["run_ansible_controller.sh", base64.b64encode(json.dumps(res))])
-	print 'END'
-	break]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ cat message_consumer.py [3@python[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ rm nohup.out 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ls
-[0m[01;32mmessage_consumer.py[0m  [01;32mRedisQueue.py[0m  [01;32mRedisQueue.pyc[0m  [01;32mrun_ansible_controller.sh[0m  [01;32mrun_ansible.py[0m  [01;32mtypescript[0m
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ll
-total 46
-drwxrwx--- 1 root vboxsf  4096 Feb 24 14:12 [0m[01;34m.[0m/
-drwxrwx--- 1 root vboxsf  4096 Feb 24 12:28 [01;34m..[0m/
--rwxrwx--- 1 root vboxsf   516 Feb 24 14:11 [01;32mmessage_consumer.py[0m*
--rwxrwx--- 1 root vboxsf  1242 Feb 24 12:52 [01;32mRedisQueue.py[0m*
--rwxrwx--- 1 root vboxsf  2265 Feb 24 12:52 [01;32mRedisQueue.pyc[0m*
--rwxrwx--- 1 root vboxsf    39 Feb 24 14:09 [01;32mrun_ansible_controller.sh[0m*
--rwxrwx--- 1 root vboxsf   184 Feb 24 14:09 [01;32mrun_ansible.py[0m*
--rwxrwx--- 1 root vboxsf 32768 Feb 24 13:24 [01;32mtypescript[0m*
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash -
-
-## Installing the NodeSource Node.js v7.x repo...
-
-
-## Populating apt-get cache...
-
-+ apt-get update
-0% [Working]0% [Connecting to in.archive.ubuntu.com] [Waiting for headers] [Connecting to ppa.launchpad.net]                                                                                                Get:1 http://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]
-0% [Connecting to in.archive.ubuntu.com] [1 InRelease 0 B/102 kB 0%] [Connecting to ppa.launchpad.net]                                                                                                      0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [1 InRelease gpgv 102 kB] [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]                                                                                                    0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to ppa.launchpad.net]                                                                          Hit:2 http://in.archive.ubuntu.com/ubuntu xenial InRelease
-                                                                          0% [Waiting for headers] [Waiting for headers]                                              Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial InRelease
-0% [Waiting for headers] [Waiting for headers]0% [2 InRelease gpgv 247 kB] [Waiting for headers] [Waiting for headers]                                                                        Hit:4 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
-                                                                        0% [2 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [3 InRelease gpgv 18.1 kB] [Waiting for headers]                                                   0% [Waiting for headers]0% [4 InRelease gpgv 17.5 kB] [Waiting for headers]                                                   0% [Waiting for headers]                        Get:5 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]
-0% [5 InRelease 0 B/102 kB 0%]                              0% [Working]0% [5 InRelease gpgv 102 kB] [Waiting for headers]                                                  Hit:6 https://deb.nodesource.com/node_7.x xenial InRelease
-0% [5 InRelease gpgv 102 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [6 InRelease gpgv 3,914 B] [Waiting for headers]                                                   0% [Waiting for headers]                        Get:7 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB]
-0% [7 InRelease 0 B/102 kB 0%]                                                                                                                             34.0 kB/s 3s0% [Working]                                                                                                                                               34.0 kB/s 0s0% [7 InRelease gpgv 102 kB] [Waiting for headers]                                                                                                         34.0 kB/s 0s99% [Waiting for headers]                                                                                                                                  34.0 kB/s 0s                                                                                                                                                                       Get:8 http://in.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [483 kB]
-51% [8 Packages 14.4 kB/483 kB 3%]                                                                                                                        34.0 kB/s 13s82% [8 Packages 321 kB/483 kB 67%]                                                                                                                         34.0 kB/s 4s99% [Working]                                                                                                                                              34.0 kB/s 0s                                                                                                                                                                       Get:9 http://in.archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [473 kB]
-71% [9 Packages 30.9 kB/473 kB 7%]                                                                                                                        34.0 kB/s 13s71% [8 Packages store 0 B] [9 Packages 30.9 kB/473 kB 7%]                                                                                                 34.0 kB/s 13s75% [9 Packages 95.2 kB/473 kB 20%]                                                                                                                       34.0 kB/s 11s91% [9 Packages 352 kB/473 kB 74%]                                                                                                                         34.0 kB/s 3s99% [Working]                                                                                                                                              34.0 kB/s 0s99% [9 Packages store 0 B]                                                                                                                                 34.0 kB/s 0s                                                                                                                                                                       Get:10 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages [409 kB]
-79% [9 Packages store 0 B] [10 Packages 0 B/409 kB 0%]                                                                                                    34.0 kB/s 12s83% [10 Packages 71.2 kB/409 kB 17%]                                                                                                                       34.0 kB/s 9s96% [10 Packages 328 kB/409 kB 80%]                                                                                                                        34.0 kB/s 2s99% [Working]                                                                                                                                              34.0 kB/s 0s99% [10 Packages store 0 B]                                                                                                                                34.0 kB/s 0s                                                                                                                                                                       Get:11 http://in.archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages [403 kB]
-84% [10 Packages store 0 B] [11 Packages 0 B/403 kB 0%]                                                                                                   34.0 kB/s 11s86% [11 Packages 47.6 kB/403 kB 12%]                                                                                                                      34.0 kB/s 10s97% [11 Packages 345 kB/403 kB 86%]                                                                                                                        34.0 kB/s 1s100% [Working]                                                                                                                                             34.0 kB/s 0s100% [11 Packages store 0 B]                                                                                                                               34.0 kB/s 0s100% [Working]                                                                                                                                             34.0 kB/s 0s                                                                                                                                                                       Fetched 2,074 kB in 9s (219 kB/s)
-Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 9%Reading package lists... 9%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 28%Reading package lists... 40%Reading package lists... 40%Reading package lists... 63%Reading package lists... 68%Reading package lists... 68%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-
-## Confirming "xenial" is supported...
-
-+ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_7.x/dists/xenial/Release'
-
-## Adding the NodeSource signing key to your keyring...
-
-+ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
-OK
-
-## Creating apt sources list file for the NodeSource Node.js v7.x repo...
-
-+ echo 'deb https://deb.nodesource.com/node_7.x xenial main' > /etc/apt/sources.list.d/nodesource.list
-+ echo 'deb-src https://deb.nodesource.com/node_7.x xenial main' >> /etc/apt/sources.list.d/nodesource.list
-
-## Running `apt-get update` for you...
-
-+ apt-get update
-0% [Working]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]                                                                                                              Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
-                                                                                                              0% [Waiting for headers] [Waiting for headers]                                              Hit:2 http://in.archive.ubuntu.com/ubuntu xenial InRelease
-                                              Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial InRelease
-0% [Waiting for headers] [Waiting for headers]0% [1 InRelease gpgv 102 kB] [Waiting for headers] [Waiting for headers]                                                                        0% [Waiting for headers] [Waiting for headers]                                              Hit:4 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease
-                                              Hit:5 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
-                                              0% [Waiting for headers]0% [2 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [3 InRelease gpgv 18.1 kB] [Waiting for headers]                                                   Hit:6 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease
-                                                   0% [3 InRelease gpgv 18.1 kB]                             0% [Working]0% [4 InRelease gpgv 102 kB]                            0% [Working]0% [5 InRelease gpgv 17.5 kB]                             0% [Working]0% [6 InRelease gpgv 102 kB]                            0% [Working]            Hit:7 https://deb.nodesource.com/node_7.x xenial InRelease
-0% [Working]0% [7 InRelease gpgv 3,914 B]                             20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 9%Reading package lists... 9%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 33%Reading package lists... 40%Reading package lists... 40%Reading package lists... 68%Reading package lists... 68%Reading package lists... 76%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-
-## Run `apt-get install nodejs` (as root) to install Node.js v7.x and npm
-
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ sudo su
-]0;root@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeroot@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge# cd
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# apt-get install -y python-software-properties && curl -sL https://deb.nodesource.com/setup_7.x | sudo -E bash - && apt-get install nodejs
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-python-software-properties is already the newest version (0.96.20.5).
-0 upgraded, 0 newly installed, 0 to remove and 156 not upgraded.
-
-## Installing the NodeSource Node.js v7.x repo...
-
-
-## Populating apt-get cache...
-
-+ apt-get update
-0% [Working]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]                                                                                                              Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
-                                                                                                              0% [Waiting for headers] [Waiting for headers]                                              Hit:2 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial InRelease
-0% [Waiting for headers] [Waiting for headers]0% [1 InRelease gpgv 102 kB] [Waiting for headers] [Waiting for headers]                                                                        Hit:3 http://in.archive.ubuntu.com/ubuntu xenial InRelease
-0% [1 InRelease gpgv 102 kB] [Waiting for headers] [Waiting for headers]                                                                        Hit:4 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
-                                                                        0% [1 InRelease gpgv 102 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [2 InRelease gpgv 18.1 kB] [Waiting for headers]                                                   Hit:5 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease
-0% [2 InRelease gpgv 18.1 kB] [Waiting for headers]                                                   0% [Waiting for headers]0% [3 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [4 InRelease gpgv 17.5 kB] [Waiting for headers]                                                   Hit:6 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease
-                                                   0% [4 InRelease gpgv 17.5 kB]                             0% [Working]0% [5 InRelease gpgv 102 kB]                            0% [Working]0% [6 InRelease gpgv 102 kB]                            0% [Working]            Hit:7 https://deb.nodesource.com/node_7.x xenial InRelease
-0% [Working]0% [7 InRelease gpgv 3,914 B]                             20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 9%Reading package lists... 9%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 38%Reading package lists... 40%Reading package lists... 40%Reading package lists... 68%Reading package lists... 68%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-
-## Confirming "xenial" is supported...
-
-+ curl -sLf -o /dev/null 'https://deb.nodesource.com/node_7.x/dists/xenial/Release'
-
-## Adding the NodeSource signing key to your keyring...
-
-+ curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
-OK
-
-## Creating apt sources list file for the NodeSource Node.js v7.x repo...
-
-+ echo 'deb https://deb.nodesource.com/node_7.x xenial main' > /etc/apt/sources.list.d/nodesource.list
-+ echo 'deb-src https://deb.nodesource.com/node_7.x xenial main' >> /etc/apt/sources.list.d/nodesource.list
-
-## Running `apt-get update` for you...
-
-+ apt-get update
-0% [Working]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]0% [Connecting to in.archive.ubuntu.com] [Connecting to security.ubuntu.com] [Connecting to ppa.launchpad.net]                                                                                                              Hit:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
-                                                                                                              0% [Waiting for headers] [Waiting for headers]                                              Hit:2 http://in.archive.ubuntu.com/ubuntu xenial InRelease
-                                              Hit:3 http://ppa.launchpad.net/ansible/ansible/ubuntu xenial InRelease
-0% [Waiting for headers] [Waiting for headers]0% [1 InRelease gpgv 102 kB] [Waiting for headers] [Waiting for headers]                                                                        0% [Waiting for headers] [Waiting for headers]0% [2 InRelease gpgv 247 kB] [Waiting for headers] [Waiting for headers]                                                                        Hit:4 http://ppa.launchpad.net/git-core/ppa/ubuntu xenial InRelease
-                                                                        0% [2 InRelease gpgv 247 kB] [Waiting for headers]                                                  Hit:5 http://in.archive.ubuntu.com/ubuntu xenial-updates InRelease
-0% [2 InRelease gpgv 247 kB] [Waiting for headers]                                                  0% [Waiting for headers]0% [3 InRelease gpgv 18.1 kB] [Waiting for headers]                                                   0% [Waiting for headers]0% [4 InRelease gpgv 17.5 kB] [Waiting for headers]                                                   Hit:6 http://in.archive.ubuntu.com/ubuntu xenial-backports InRelease
-                                                   0% [4 InRelease gpgv 17.5 kB]                             0% [Working]0% [5 InRelease gpgv 102 kB]                            0% [Working]0% [6 InRelease gpgv 102 kB]                            0% [Working]            Hit:7 https://deb.nodesource.com/node_7.x xenial InRelease
-0% [Working]0% [7 InRelease gpgv 3,914 B]                             20% [Working]             Reading package lists... 0%Reading package lists... 0%Reading package lists... 1%Reading package lists... 4%Reading package lists... 4%Reading package lists... 9%Reading package lists... 9%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 12%Reading package lists... 39%Reading package lists... 40%Reading package lists... 40%Reading package lists... 68%Reading package lists... 68%Reading package lists... 84%Reading package lists... 84%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 85%Reading package lists... 87%Reading package lists... 87%Reading package lists... 90%Reading package lists... 90%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 91%Reading package lists... 93%Reading package lists... 93%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 95%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 96%Reading package lists... 97%Reading package lists... 97%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 98%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... 99%Reading package lists... Done
-
-## Run `apt-get install nodejs` (as root) to install Node.js v7.x and npm
-
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-The following packages will be upgraded:
-  nodejs
-1 upgraded, 0 newly installed, 0 to remove and 155 not upgraded.
-Need to get 11.0 MB of archives.
-After this operation, 748 kB of additional disk space will be used.
-0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]0% [Working]            Get:1 https://deb.nodesource.com/node_7.x xenial/main amd64 nodejs amd64 7.6.0-1nodesource1~xenial1 [11.0 MB]
-0% [1 nodejs 0 B/11.0 MB 0%]19% [1 nodejs 2,670 kB/11.0 MB 24%]                                                                                                                        420 kB/s 19s39% [1 nodejs 5,439 kB/11.0 MB 49%]                                                                                                                        420 kB/s 13s58% [1 nodejs 7,995 kB/11.0 MB 72%]                                                                                                                         420 kB/s 7s79% [1 nodejs 11.0 MB/11.0 MB 99%]                                                                                                                          420 kB/s 0s100% [Working]                                                                                                                                              420 kB/s 0s                                                                                                                                                                       Fetched 11.0 MB in 7s (1,402 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 76422 files and directories currently installed.)
-Preparing to unpack .../nodejs_7.6.0-1nodesource1~xenial1_amd64.deb ...
-Detected old npm client, removing...
-Unpacking nodejs (7.6.0-1nodesource1~xenial1) over (7.5.0-1nodesource1~xenial1) ...
-Processing triggers for man-db (2.7.5-1) ...
-Setting up nodejs (7.6.0-1nodesource1~xenial1) ...
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# 
-]0;root@ubuntu: ~root@ubuntu:~# exit
-exit
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ python message_consumer.py 
-{'build_id': 123, 'action': 'run_playbook', 'job': 'build', 'with_vars': {'alpha': 1, 'beta': 2}, 'call_id': 1234}
-nohup: ignoring input and appending output to 'nohup.out'
-^CTraceback (most recent call last):
-  File "message_consumer.py", line 20, in <module>
-    res = q.get()
-  File "/media/sf_D_DRIVE/SRKayAnsible/message_bridge/RedisQueue.py", line 28, in get
-    item = self.__db.blpop(self.key, timeout=timeout)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 1163, in blpop
-    return self.execute_command('BLPOP', *keys)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 573, in execute_command
-    return self.parse_response(connection, command_name, **options)
-  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 585, in parse_response
-    response = connection.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 577, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 238, in read_response
-    response = self._buffer.readline()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 168, in readline
-    self._read_from_socket()
-  File "/usr/local/lib/python2.7/dist-packages/redis/connection.py", line 126, in _read_from_socket
-    data = self._sock.recv(socket_read_size)
-KeyboardInterrupt
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ 
-]0;ashish@ubuntu: /media/sf_D_DRIVE/SRKayAnsible/message_bridgeashish@ubuntu:/media/sf_D_DRIVE/SRKayAnsible/message_bridge$ ls
-[0m[01;32mmessage_consumer.py[0m  [01;32mnohup.o
