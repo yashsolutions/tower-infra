@@ -1,0 +1,6 @@
+---
+
+- hosts: logstash
+  become: true
+  roles:
+  - { role: setup_logstash }
