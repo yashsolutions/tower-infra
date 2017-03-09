@@ -1,0 +1,7 @@
+- name: "Install elasticsearch on single node"
+  hosts: elasticsearch
+  become: true
+  roles:
+    - { role: setup_elasticsearch, es_instance_name: "elasticsearch-01" }
+  vars:
+

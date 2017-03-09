@@ -2,6 +2,7 @@ openvpn ansible_host=10.0.4.6
 swarm-01 ansible_host=10.0.2.5
 swarm-02 ansible_host=10.0.2.6
 logstash ansible_host=10.0.1.8
+elasticsearch-01 ansible_host=10.0.5.4
 
 [docker_engine]
 swarm-01
@@ -16,3 +17,7 @@ swarm-02
 
 [logstash]
 logstash
+
+[elasticsearch]
+elasticsearch-01
+
