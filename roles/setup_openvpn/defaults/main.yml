@@ -55,6 +55,20 @@ openvpn_clients:
 - kesavan.srinivasan
 - sandeep.pagi
 - rajesh.saini
+- anish.gandhi
+- janki.gadhiya
+- shweta.mehta
+- apexa.pate
+- hetal.patel
+- shailesh.yadav
+- dipak.misal
+- ilesh.vithani
+- disha.mehta
+- pooja.thakkar
+- malay.matwankar
+- gautam.vanani
+- kinjal.mori
+
 openvpn_clients_revoke: []                        # Revoke clients certificates
 
 # Use PAM authentication
@@ -77,3 +91,5 @@ openvpn_simple_auth_password: ""
 openvpn_unified_client_profiles: yes
 openvpn_routes:
   - "10.0.1.0 255.255.255.0"
+  - "10.8.0.0 255.255.255.0"
+  - "10.0.2.0 255.255.255.0"
