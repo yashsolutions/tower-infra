@@ -1,5 +1,5 @@
 ---
-logstash_listen_port_beats: 5044
+logstash_listen_port_beats: 8001
 
 logstash_elasticsearch_hosts:
   - http://elasticsearch-01:9200

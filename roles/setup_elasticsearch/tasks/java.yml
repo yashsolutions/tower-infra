@@ -15,8 +15,8 @@
 
 - command: java -version 2>&1 | grep OpenJDK
   register: open_jdk
+  changed_when: false
 
 - name: refresh the java ca-certificates
   command: /var/lib/dpkg/info/ca-certificates-java.postinst configure
   when: ansible_distribution == 'Ubuntu' and open_jdk.rc == 0
-

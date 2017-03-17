@@ -21,3 +21,11 @@ logstash
 [elasticsearch]
 elasticsearch-01
 
+
+[elasticsearch_master_nodes]
+elasticsearch-01
+
+[elasticsearch_master_data_nodes]
+elasticsearch-01
+
+[elasticsearch_data_nodes]

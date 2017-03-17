@@ -1,7 +1,7 @@
-- name: "Install elasticsearch on single node"
-  hosts: elasticsearch
+- hosts: elasticsearch_master_nodes
   become: true
   roles:
-    - { role: setup_elasticsearch, es_instance_name: "elasticsearch-01" }
+    - { role: setup_elasticsearch, es_instance_name: "elasticsearch-01", es_config: { discovery.zen.ping.unicast.hosts: "elasticsearch-01", network.host: "0.0.0.0", cluster.name: "srkay_es", http.port: 9200, transport.tcp.port: 9300, node.data: false, node.master: true } }
   vars:
-
+    es_heap_size: "2g"
+    es_cluster_name: "srkay_es"
