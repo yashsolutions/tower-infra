@@ -1,0 +1,36 @@
+---
+
+- name: create folders
+  file: path=/root/Prometheus/node_exporter state=directory mode=0775 recurse=yes
+
+- unarchive:
+    src: https://github.com/prometheus/node_exporter/releases/download/0.11.0/node_exporter-0.11.0.linux-amd64.tar.gz
+    dest: /root/Prometheus/node_exporter
+    remote_src: True
+
+- file:
+    src: /root/Prometheus/node_exporter/node_exporter
+    dest: /usr/bin/node_exporter
+    owner: root
+    group: root
+    state: link
+
+- name: setup conf
+  copy:
+    src: node_exporter.conf
+    dest: /etc/init/node_exporter.conf
+
+- name: download init script
+  copy:
+    src: node_exporter
+    dest: /etc/init.d/node_exporter
+    mode: 0755
+
+- name: reload systemctl daemon
+  command: systemctl daemon-reload
+
+- name: start prometheus node exporter
+  service:
+    name: node_exporter
+    state: restarted
+

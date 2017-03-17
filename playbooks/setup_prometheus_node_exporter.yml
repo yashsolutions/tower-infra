@@ -1,0 +1,4 @@
+- hosts: all
+  roles:
+  - prometheus_exporter
+  become: true
