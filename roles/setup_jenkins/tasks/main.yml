@@ -31,22 +31,37 @@
 - name: setup private key
   copy:
     content: "{{ ssh_keys.jenkins.private }}"
-    dest: ~/.ssh/id_rsa
-  become: jenkins
+    dest: /var/lib/jenkins/.ssh/id_rsa
+    owner: jenkins
+    group: jenkins
+    mode: 0400
+  become: true
 
 - name: init jenkins repo
-  command: "cd /var/lib/jenkins && git init && git remote set-url origin git@gitlab.com:srkaycg/solitaire/jenkins.git"
-  become: jenkins
+  command: git init
+  become: true
+  become_user: jenkins
+  args:
+    chdir: /var/lib/jenkins
+
+- name: set remote for repo
+  command: git remote set-url origin git@gitlab.com:srkaycg/solitaire/jenkins.git
+  become: true
+  become_user: jenkins
+  args:
+    chdir: /var/lib/jenkins
 
 - name: check service
   service:
     name: jenkins
-    status: restarted
+    state: restarted
+  become: true
 
 - name: setup nginx proxy
   apt:
     name: nginx
     update_cache: yes
+  become: true
 
 - name: configure nginx proxy
   copy:
@@ -57,4 +72,5 @@
 - name: restart proxy
   service:
     name: nginx
-    status: restarted
+    state: restarted
+  become: true
