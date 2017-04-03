@@ -1,0 +1,31 @@
+---
+
+- name: get ansible repo
+  git:
+    repo: 'http://10.0.1.5/ansible'
+    dest: /home/ansible/ansible
+
+- name: install supervisor and redis
+  apt:
+    name: "{{ item }}"
+  become: true
+  with_items:
+  - supervisor
+  - redis
+
+- name: setup redis
+  copy:
+    src: redis.conf
+    dest: /etc/redis/redis.conf
+  become: true
+
+- name: setup message bridge
+  copy:
+    src: message_bridge.conf
+    dest: /etc/supervisor/conf.d/message_bridge.conf
+  become: true
+
+- name: restart supervisor
+  service:
+    name: supervisor
+    state: restarted
