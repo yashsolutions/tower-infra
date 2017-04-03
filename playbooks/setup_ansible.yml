@@ -1,4 +1,3 @@
-- hosts: localhost
-  become: true
+- hosts: ansible
   roles:
   - setup_ansible
