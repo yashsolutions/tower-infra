@@ -2,8 +2,9 @@
 
 - name: get ansible repo
   git:
-    repo: 'http://10.0.1.5/ansible'
+    repo: 'http://10.0.1.5/ansible-bot'
     dest: /home/ansible/ansible
+    force: yes
 
 - name: install supervisor and redis
   apt:
@@ -11,7 +12,7 @@
   become: true
   with_items:
   - supervisor
-  - redis
+  - redis-server
 
 - name: setup redis
   copy:
