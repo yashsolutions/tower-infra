@@ -1,0 +1,50 @@
+---
+
+- name: include keys
+  include_var: ../secrets/ssh_keys.yml
+
+- name: add repo key
+  command: wget -q -O - https://pkg.jenkins.io/debian/jenkins-ci.org.key | sudo apt-key add -
+  become: true
+
+- name: add repo list
+  command: sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  become: true
+
+- name: install jenkins
+  apt:
+    name: jenkins
+    update_cache: yes
+
+- name: setup private key
+  copy:
+    content: "{{ ssh_keys.jenkins.private }}"
+    dest: ~/.ssh/id_rsa
+  become: jenkins
+
+- name: init jenkins repo
+  command: cd /var/lib/jenkins && git init && git remote set-url origin git@gitlab.com:srkaycg/solitaire/jenkins.git
+  beome: jenkins
+
+- name:
+
+- name: check service
+  service:
+    name: jenkins
+    status: restarted
+
+- name: setup nginx proxy
+  apt:
+    name: nginx
+    update_cache: yes
+
+- name: configure nginx proxy
+  copy:
+    src: default
+    dest: /etc/nginx/sites-available/default
+  become: true
+
+- name: restart proxy
+  service:
+    name: nginx
+    status: restarted
