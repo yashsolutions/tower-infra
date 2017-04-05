@@ -1,4 +1,7 @@
 ---
+# Redquired creds
+- name: Include docker registry credentials
+  include_vars: ../secrets/docker_registry_creds.yml
 
 # Variables setup
 - name: Include os-specific variables.
@@ -57,3 +60,7 @@
 # Setup the Docker Swarm Cluster
 - include: swarm_cluster.yml
   when: not skip_swarm
+
+- name: login into docker registry
+  when: docker_registry_login
+  command: "docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }}"
