@@ -1,4 +1,5 @@
 - name: "Provision Docker Swarm Cluster"
-  hosts: all
+  hosts: docker_engine
+  become: true
   roles:
     - { role: setup_dockerswarm }

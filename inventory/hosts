@@ -2,7 +2,6 @@ ansible ansible_host=10.0.1.4
 openvpn ansible_host=10.0.4.6
 swarm-01 ansible_host=10.0.2.5
 swarm-02 ansible_host=10.0.2.6
-logstash ansible_host=10.0.1.8
 elasticsearch-01 ansible_host=10.0.5.4
 jenkins ansible_host=10.0.1.6
 
