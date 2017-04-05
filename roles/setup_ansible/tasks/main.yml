@@ -31,3 +31,12 @@
     name: supervisor
     state: restarted
   become: true
+
+- name: setup private key
+  copy:
+    content: "{{ ssh_keys.ansible.private }}"
+    dest: /home/ansible/.ssh/id_rsa
+    owner: ansible
+    group: ansible
+    mode: 0400
+  become: true
