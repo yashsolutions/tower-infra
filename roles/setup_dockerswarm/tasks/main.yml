@@ -63,4 +63,4 @@
 
 - name: login into docker registry
   when: docker_registry_login
-  command: "docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }}"
+  command: "docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }} {{ docker_registry_name }}"

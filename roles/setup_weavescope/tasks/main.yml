@@ -10,11 +10,11 @@
 
 - name: get IPs of all nodes
   set_fact:
-  - allips: |
-                    {% set comma = joiner(" ") %}
-                    {% for host in groups['mygroup'] -%}
-                      {{ comma() }}{{ hostvars[host]['ansible_eth0']['ipv4']['address']}}
-                    {%- endfor -%}
+    allips: |
+      {% set comma = joiner(" ") %}
+      {% for host in groups['docker_engine'] -%}
+        {{ comma() }}{{ hostvars[host]['ansible_eth0']['ipv4']['address']}}
+      {%- endfor -%}
 
 - name: launch scope
   command: "scope launch {{ allips }}"
