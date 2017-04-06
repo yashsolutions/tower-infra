@@ -1,0 +1,37 @@
+{% if service in docker_services.stdout %}
+{% set service_exists = true %}
+{% else %}
+{% set service_exists = false %}
+{% endif %}
+{% if service_exists == true %}
+{% set command = 'docker service update --with-registry-auth' %}
+{% else %}
+{% set command = 'docker service create --with-registry-auth' %}
+{% endif %}
+{% if replication_mode == 'replicated' %}
+{% if service_exists == true %}
+{% set command = command + ' --replicas ' + replicas %}
+{% else %}
+{% set command = command + ' --mode replicated --replicas ' + replicas %}
+{% endif %}
+{% elif replication_mode == 'global' %}
+{% if service_exists != true %}
+{% set command = command + ' --mode global' %}
+{% endif %}
+{% endif %}
+{% if service_exists != true %}
+{% set command = command + ' --network ' + network %}
+{% set command = command + ' --name ' + service_env + '-' + service %}
+{% if port != '0' %}
+{% set command = command + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOST=' + VIRTUAL_HOST + ' --publish ' + port + ':' + port %}
+{% endif %}
+{% if volume != '0' %}
+{% set command = command + ' --mount type=bind,source=' + volume + ',target=' + volume %}
+{% endif %}
+{% endif %}
+{% if service_exists == true %}
+{% set command = command + ' --image ' + image + ':' + git_commit + ' ' + service_env + '-' + service %}
+{% else %}
+{% set command = command + ' ' + image + ':' + git_commit %}
+{% endif %}
+{{ command }}
