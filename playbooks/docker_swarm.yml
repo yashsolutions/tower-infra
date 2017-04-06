@@ -1,6 +1,0 @@
----
-
-- name: "Provision a Docker Swarm cluster"
-  hosts: docker_engine
-  roles:
-    - { role: setup_dockerswarm }

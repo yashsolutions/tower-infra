@@ -1,1 +1,6 @@
 - include: setup_ansible.yml
+- include: setup_openvpn.yml
+- include: setup_jenkins.yml
+- include: setup_dockerswarm.yml
+- include: setup_elasticsearch.yml
+- include: setup_prometheus_node_exporter.yml

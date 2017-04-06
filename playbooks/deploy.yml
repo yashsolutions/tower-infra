@@ -3,19 +3,19 @@
 - hosts: swarm-01
   tasks:
     - shell: "docker pull {{ image }}:{{ git_commit }}"
-    - shell: "docker service create --network {{ network }} --mode {{ replication_mode }} --replicas {{ replicas }} --name {{ service_env }}-{{ service }} --publish {{ port }}:{{ port }} --with-registry-auth {{ image }}:{{ git_commit }}"
+    - shell: "docker service create --env SERVICE_PORTS={{ port }} --network {{ network }} --mode {{ replication_mode }} --replicas {{ replicas }} --name {{ service_env }}-{{ service }} --publish {{ port }}:{{ port }} --with-registry-auth {{ image }}:{{ git_commit }}"
       ignore_errors: yes
       when: replication_mode == 'replicated' and port != '0'
 
-    - shell: "docker service create --network {{ network }} --mode {{ replication_mode }} --name {{ service_env }}-{{ service }} --publish {{ port }}:{{ port }} --with-registry-auth {{ image }}:{{ git_commit }}"
+    - shell: "docker service create --env SERVICE_PORTS={{ port }} --network {{ network }} --mode {{ replication_mode }} --name {{ service_env }}-{{ service }} --publish {{ port }}:{{ port }} --with-registry-auth {{ image }}:{{ git_commit }}"
       ignore_errors: yes
       when: replication_mode == 'global' and port != '0'
 
-    - shell: "docker service create --network {{ network }} --mode {{ replication_mode }} --replicas {{ replicas }} --name {{ service_env }}-{{ service }} --with-registry-auth {{ image }}:{{ git_commit }}"
+    - shell: "docker service create --env SERVICE_PORTS={{ port }} --network {{ network }} --mode {{ replication_mode }} --replicas {{ replicas }} --name {{ service_env }}-{{ service }} --with-registry-auth {{ image }}:{{ git_commit }}"
       ignore_errors: yes
       when: replication_mode == 'replicated' and port == '0'
 
-    - shell: "docker service create --network {{ network }} --mode {{ replication_mode }} --name {{ service_env }}-{{ service }} --with-registry-auth {{ image }}:{{ git_commit }}"
+    - shell: "docker service create --env SERVICE_PORTS={{ port }}  --network {{ network }} --mode {{ replication_mode }} --name {{ service_env }}-{{ service }} --with-registry-auth {{ image }}:{{ git_commit }}"
       ignore_errors: yes
       when: replication_mode == 'global' and port == '0'
 
