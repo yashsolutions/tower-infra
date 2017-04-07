@@ -10,7 +10,7 @@
 
 - name: get docker command
   set_fact:
-    docker_command: "{{ lookup('template', 'deploy_command.j2') }}"
+    docker_command: "{{ lookup('template', 'docker_command.j2') }}"
 
 - name: deploying using
   debug: var=docker_command
