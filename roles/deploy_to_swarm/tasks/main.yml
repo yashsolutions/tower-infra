@@ -1,4 +1,8 @@
 ---
+
+- name: Include required credentials
+  include_vars: ../secrets/common.yml
+
 - name: get available services
   command: docker service list
   register: docker_services
@@ -21,3 +25,6 @@
 
 - name: deploying the service
   command: "{{ docker_command }}"
+
+- name: setup the service url
+  command: "{{ lookup('template', 'subdomain_api_call.j2') }}"
