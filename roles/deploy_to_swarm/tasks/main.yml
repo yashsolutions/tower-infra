@@ -1,9 +1,12 @@
 ---
+- name: get available services
+  command: docker service list
+  register: docker_services
 
 - name: removing the service
   command: "docker service rm {{ service_env }}-{{ service }}"
-  when: reset_service
-  ignore_erroris: yes
+  when: reset_service == '1' and service in docker_services.stdout
+  ignore_errors: yes
 
 - name: get available services
   command: docker service list

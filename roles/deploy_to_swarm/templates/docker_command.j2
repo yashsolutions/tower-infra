@@ -21,13 +21,16 @@
 {% endif %}
 {% if service_exists != true %}
 {% set command = command + ' --network ' + network %}
-{% set command = command + ' --name ' + service_env + '-' + service %}
+{% set command = command + ' --name ' + service_env + '-' + service + ' --env SERVICE_ENV=' + service_env %}
 {% if port != '0' %}
-{% set command = command + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOST=' + VIRTUAL_HOST + ' --publish ' + port + ':' + port %}
+{% set command = command + ' --publish ' + port + ':' + port + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOSTS=' + VIRTUAL_HOSTS %}
 {% endif %}
 {% if volume != '0' %}
 {% set command = command + ' --mount type=bind,source=' + volume + ',target=' + volume %}
 {% endif %}
+{% for key,value in container_env.iteritems() %}
+{% set command = command + ' --env ' + key + '=' + value %}
+{% endfor %}
 {% endif %}
 {% if service_exists == true %}
 {% set command = command + ' --image ' + image + ':' + git_commit + ' ' + service_env + '-' + service %}
