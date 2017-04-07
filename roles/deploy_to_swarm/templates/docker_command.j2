@@ -23,7 +23,7 @@
 {% set command = command + ' --network ' + network %}
 {% set command = command + ' --name ' + service_env + '-' + service + ' --env SERVICE_ENV=' + service_env %}
 {% if port != '0' %}
-{% set command = command + ' --publish ' + port + ':' + port + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOSTS=' + VIRTUAL_HOSTS %}
+{% set command = command + ' --publish ' + port + ':' + port + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOST=' + VIRTUAL_HOST %}
 {% endif %}
 {% if volume != '0' %}
 {% set command = command + ' --mount type=bind,source=' + volume + ',target=' + volume %}
