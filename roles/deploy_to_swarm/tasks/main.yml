@@ -1,7 +1,7 @@
 ---
 
 - name: removing the service
-  command: "docker service rm {{ service }}"
+  command: "docker service rm {{ service_env }}-{{ service }}"
   when: reset_service
 
 - name: get available services
