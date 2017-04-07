@@ -1,0 +1,16 @@
+---
+
+- name: removing the service
+  command: "docker service rm {{ service }}"
+  when: reset_service
+
+- name: get available services
+  command: docker service list
+  register: docker_services
+
+- name: get docker command
+  set_fact:
+    docker_command:
+
+- name: deploying the service
+  command: "{{ docker_command }}"
