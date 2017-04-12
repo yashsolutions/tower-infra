@@ -1,0 +1,6 @@
+---
+
+docker_registry_login: True
+docker_registry_name: srkay-on.azurecr.io
+docker_registry_user: "{{ docker_registry['user'] }}"
+docker_registry_pass: "{{ docker_registry['pass'] }}"
