@@ -11,13 +11,15 @@
     repo: 'http://10.0.1.5/terraform-bot'
     dest: /home/ansible/terraform
 
-- name: install supervisor and redis
+- name: install supervisor, redis and python-dev
   apt:
     name: "{{ item }}"
   become: true
   with_items:
   - supervisor
   - redis-server
+  - python-dev
+  - software-properties-common
 
 - name: setup redis
   copy:
@@ -46,8 +48,12 @@
     mode: 0400
   become: true
 
-- name: install python-dev
+- name: add ansible repository
+  command: apt-add-repository -y ppa:ansible/ansible
+  become: true
 
 - name: install ansible
+  apt:
+    name: ansible
+    update_cache: yes
 
-- name: install terraform

@@ -1,3 +1,4 @@
 - hosts: ansible
   roles:
   - setup_ansible
+  - setup_terraform
