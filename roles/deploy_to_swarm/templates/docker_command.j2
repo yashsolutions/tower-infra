@@ -1,4 +1,4 @@
-{% if service in docker_services.stdout %}
+{% if ( service_env + '-' + service ) in docker_services.stdout %}
 {% set service_exists = true %}
 {% else %}
 {% set service_exists = false %}
