@@ -68,6 +68,9 @@ openvpn_clients:
 - malay.matwankar
 - gautam.vanani
 - kinjal.mori
+- kinnari.jasoliya
+- jayesh.savaliya
+- nilesh.khude
 
 openvpn_clients_revoke: []                        # Revoke clients certificates
 
