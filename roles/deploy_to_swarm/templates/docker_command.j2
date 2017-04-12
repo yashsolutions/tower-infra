@@ -22,6 +22,9 @@
 {% if service_exists != true %}
 {% set command = command + ' --network ' + network %}
 {% set command = command + ' --name ' + service_env + '-' + service + ' --env SERVICE_ENV=' + service_env %}
+{% if constraint != '0' %}
+{% set command = command + ' --constraint ' + constraint %}
+{% endif %}
 {% if port != '0' %}
 {% if publish_port == 1 %}
 {% set command = command + ' --publish ' + port + ':' + port %}
