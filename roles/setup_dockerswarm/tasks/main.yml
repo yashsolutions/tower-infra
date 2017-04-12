@@ -69,3 +69,7 @@
   when: "inventory_hostname == groups['docker_swarm_manager'][0]"
   command: docker network create --driver overlay --opt encrypted --ip-range 10.254.0.0/16 --subnet 10.254.0.0/16 services
   ignore_errors: yes
+
+- name: add user to group
+  command: usermod -a -G docker ansible
+  become: true
