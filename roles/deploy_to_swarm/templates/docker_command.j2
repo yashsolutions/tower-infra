@@ -26,7 +26,7 @@
 {% set command = command + ' --constraint ' + constraint %}
 {% endif %}
 {% if port != '0' %}
-{% if publish_port == 1 %}
+{% if publish_port == '1' %}
 {% set command = command + ' --publish ' + port + ':' + port %}
 {% endif %}
 {% set command = command + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOST=' + VIRTUAL_HOST %}
