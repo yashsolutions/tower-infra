@@ -6,7 +6,7 @@
 {% if service_exists == true %}
 {% set command = 'docker service update --with-registry-auth --log-driver fluentd --log-opt tag=' + service %}
 {% else %}
-{% set command = 'docker service create --with-registry-auth' %}
+{% set command = 'docker service create --with-registry-auth --log-driver fluentd --log-opt tag=' + service %}
 {% endif %}
 {% if replication_mode == 'replicated' %}
 {% if service_exists == true %}
