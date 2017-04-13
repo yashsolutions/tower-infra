@@ -6,7 +6,7 @@
   become: true
 
 - name: install fluentd
-  command: curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent2.sh | sh
+  command: bash -c 'curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent2.sh | sh'
   become: true
 
 - name: install gems
