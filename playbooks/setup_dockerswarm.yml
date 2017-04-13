@@ -4,3 +4,4 @@
   roles:
     - { role: setup_dockerswarm }
     - { role: setup_weavescope }
+    - { role: setup_fluentd }
