@@ -1,0 +1,29 @@
+---
+
+- name: install ruby
+  apt:
+    name: ruby-dev
+  become: true
+
+- name: install fluentd
+  command: curl -L https://toolbelt.treasuredata.com/sh/install-ubuntu-xenial-td-agent2.sh | sh
+  become: true
+
+- name: install gems
+  command: "/usr/sbin/td-agent-gem install {{ item }}"
+  with_items:
+  - fluent-plugin-elasticsearch
+  - fluent-plugin-redis
+  - fluent-plugin-redis-store
+
+- name: setup config file
+  template:
+    src: td-agent.conf
+    dest: /etc/td-agent/td-agent.conf
+  become: true
+
+- name: start service
+  service:
+    name: td-agent
+    state: restarted
+  become: true
