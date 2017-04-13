@@ -1,4 +1,4 @@
-- hosts: internal-swarm-1
+- hosts: docker_engine
   tasks:
   - name: cleanup containers
     command: docker rm -v $(docker ps -a -f status=exited -q)
