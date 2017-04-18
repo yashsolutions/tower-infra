@@ -1,0 +1,7 @@
+- name: "Provision Docker Swarm Cluster"
+  hosts: prod_docker_engine
+  become: true
+  roles:
+    - { role: setup_prod_dockerswarm }
+    - { role: setup_prod_weavescope }
+    - { role: setup_fluentd }

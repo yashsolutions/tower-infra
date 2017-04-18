@@ -1,0 +1,21 @@
+---
+
+- name: install scope
+  command: curl -L git.io/scope -o /usr/local/bin/scope
+  become: true
+
+- name: make scope executable
+  command: chmod a+x /usr/local/bin/scope
+  become: true
+
+- name: get IPs of all nodes
+  set_fact:
+    allips: |
+      {% set comma = joiner(" ") %}
+      {% for host in groups['prod_docker_engine'] -%}
+        {{ comma() }}{{ hostvars[host]['ansible_eth0']['ipv4']['address']}}
+      {%- endfor -%}
+
+- name: launch scope
+  command: "scope launch {{ allips }}"
+  ignore_errors: yes

@@ -1,8 +1,11 @@
 ansible ansible_host=10.0.1.4
 openvpn ansible_host=10.0.4.6
-swarm-01 ansible_host=10.0.2.5
-swarm-02 ansible_host=10.0.2.6
+swarm-01 ansible_host=10.0.2.8
+swarm-02 ansible_host=10.0.2.9
+prod-swarm-01 ansible_host=10.0.7.5
+prod-swarm-02 ansible_host=10.0.7.6
 elasticsearch-01 ansible_host=10.0.5.4
+prod-elasticsearch-01 ansible_host=10.0.6.4
 jenkins ansible_host=10.0.1.6
 
 [docker_engine]
@@ -16,12 +19,19 @@ swarm-01
 swarm-01
 swarm-02
 
-[logstash]
-logstash
+[prod_docker_engine]
+prod-swarm-01
+prod-swarm-02
+
+[prod_docker_swarm_manager]
+prod-swarm-01
+
+[prod_docker_swarm_worker]
+prod-swarm-01
+prod-swarm-02
 
 [elasticsearch]
 elasticsearch-01
-
 
 [elasticsearch_master_nodes]
 elasticsearch-01
@@ -30,3 +40,13 @@ elasticsearch-01
 elasticsearch-01
 
 [elasticsearch_data_nodes]
+elasticsearch-01
+
+[prod_elasticsearch]
+prod-elasticsearch-01
+
+[prod_elasticsearch_master_nodes]
+prod-elasticsearch-01
+
+[prod_elasticsearch_data_nodes]
+prod-elasticsearch-01
