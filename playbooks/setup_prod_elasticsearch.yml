@@ -1,4 +1,4 @@
-- hosts: elasticsearch_prod_master_nodes
+- hosts: prod_elasticsearch_master_nodes
   become: true
   roles:
     - { role: setup_prod_elasticsearch, es_instance_name: "prod-elasticsearch-01", es_config: { discovery.zen.ping.unicast.hosts: "prod-elasticsearch-01", network.host: "0.0.0.0", cluster.name: "srkay_prod_es", http.port: 9200, transport.tcp.port: 9300, node.data: false, node.master: true } }
