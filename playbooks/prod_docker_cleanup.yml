@@ -1,0 +1,13 @@
+- hosts: prod_docker_engine
+  tasks:
+  - name: cleanup containers
+    command: bash -c 'docker rm -v $(docker ps -a -f status=exited -q)'
+    ignore_errors: yes
+
+  - name: cleanup images
+    command: bash -c 'docker rmi $(docker images -a -q)'
+    ignore_errors: yes
+
+  - name: cleanup volumes
+    command: bash -c 'docker volume rm $(docker volume ls -f dangling=true -q)'
+    ignore_errors: yes

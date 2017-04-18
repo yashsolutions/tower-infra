@@ -4,9 +4,9 @@
 {% set service_exists = false %}
 {% endif %}
 {% if service_exists == true %}
-{% set command = 'docker service update --with-registry-auth --log-driver fluentd --log-opt tag=' + service %}
+{% set command = 'docker service update --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% else %}
-{% set command = 'docker service create --with-registry-auth --log-driver fluentd --log-opt tag=' + service %}
+{% set command = 'docker service create --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% endif %}
 {% if replication_mode == 'replicated' %}
 {% if service_exists == true %}
