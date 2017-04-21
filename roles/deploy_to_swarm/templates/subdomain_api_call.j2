@@ -1,1 +1,1 @@
-curl --request PATCH --header "Content-Type: application/json" --header "Authorization: sso-key {{ godaddy['sso-key'] }}" --data '[{ "type": "A", "name": "'"{{ service }}.{{ service_env }}"'", "data": "'"{{ lb_ip }}"'", "ttl": 600 }]' https://api.godaddy.com/v1/domains/aptitudelabs.com/records
+curl --request PATCH --header "Content-Type: application/json" --header "Authorization: sso-key {{ godaddy['sso-key'] }}" --data '[{ "type": "A", "name": "'"{{ virtual_host }}"'", "data": "'"{{ lb_ip }}"'", "ttl": 600 }]' https://api.godaddy.com/v1/domains/aptitudelabs.com/records

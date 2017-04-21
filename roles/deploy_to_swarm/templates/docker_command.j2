@@ -4,9 +4,9 @@
 {% set service_exists = false %}
 {% endif %}
 {% if service_exists == true %}
-{% set command = 'docker service update --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
+{% set command = 'docker service update --update-delay 10s --update-failure-action rollback --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% else %}
-{% set command = 'docker service create --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
+{% set command = 'docker service create --update-delay 10s --update-failure-action rollback --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% endif %}
 {% if replication_mode == 'replicated' %}
 {% if service_exists == true %}
@@ -21,22 +21,25 @@
 {% endif %}
 {% if service_exists != true %}
 {% set command = command + ' --network ' + network %}
-{% set command = command + ' --name ' + service_env + '-' + service + ' --env SERVICE_ENV=' + service_env + ' --env NODE_ENV=' + service_env %}
+{% set command = command + ' --name ' + service_env + '-' + service %}
+{% set env = [] %}
+{% for key, value in container_env.iteritems() %}
+{% set _ = env.append( ' --env ' + key + '=' + value ) %}
+{% endfor %}
+{% set command = command + env|join(" ") %}
 {% if constraint != '0' %}
 {% set command = command + ' --constraint ' + constraint %}
 {% endif %}
 {% if port != '0' %}
 {% if publish_port == '1' %}
 {% set command = command + ' --publish ' + port + ':' + port %}
+{% else %}
+{% set command = command + ' --publish ' + port %}
 {% endif %}
-{% set command = command + ' --env SERVICE_PORTS=' + port + ' --env VIRTUAL_HOST=' + VIRTUAL_HOST %}
 {% endif %}
 {% if volume != '0' %}
 {% set command = command + ' --mount type=bind,source=' + volume + ',target=' + volume %}
 {% endif %}
-{% for key,value in container_env.iteritems() %}
-{% set command = command + ' --env ' + key + '=' + value %}
-{% endfor %}
 {% endif %}
 {% if service_exists == true %}
 {% set command = command + ' --image ' + image + ':' + git_commit + ' ' + service_env + '-' + service %}
