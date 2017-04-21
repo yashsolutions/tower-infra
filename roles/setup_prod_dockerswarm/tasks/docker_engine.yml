@@ -46,8 +46,17 @@
     name: docker-engine
     state: present
 
+- name: setup docker service
+  copy:
+    src: docker.service
+    dest: /lib/systemd/system/docker.service
+
+- name: reload service config
+  command: systemctl daemon-reload
+  become: true
+
 - name: Enable the Docker daemon as a service and start it.
   service:
     name: docker
-    state: started
+    state: restarted
     enabled: yes

@@ -9,12 +9,13 @@
     name: flask
 
 - name: copy the server script
-  copy:
+  template:
     src: check_my_ip_server.py
-    dest: ~/check_my_ip_server.py
+    dest: /home/ansible/check_my_ip_server.py
+    mode: 0555
 
 - name: copy supervisor config
-  copy:
+  template:
     src: check_my_ip_super_config.conf
     dest: /etc/supervisor/conf.d/check_my_ip_super_config.conf
   become: true
