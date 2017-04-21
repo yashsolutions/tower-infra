@@ -36,12 +36,12 @@
 - name: use proper loadbalancer ip
   set_fact:
     lb_ip: "{{ internal_lb_ip }}"
-  when: 'prod' != service_env
+  when: prod != "{{ service_env }}"
 
 - name: use proper loadbalancer ip
   set_fact:
     lb_ip: "{{ prod_lb_ip }}"
-  when: 'prod' == service_env
+  when: prod == "{{ service_env }}"
 
 - name: setup the service url
   command: "{{ lookup('template', 'subdomain_api_call.j2') }}"

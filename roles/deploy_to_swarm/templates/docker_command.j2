@@ -4,9 +4,9 @@
 {% set service_exists = false %}
 {% endif %}
 {% if service_exists == true %}
-{% set command = 'docker service update --update-delay 10s --update-failure-action rollback --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
+{% set command = 'docker service update --update-delay 10s --update-failure-action pause --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% else %}
-{% set command = 'docker service create --update-delay 10s --update-failure-action rollback --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
+{% set command = 'docker service create --update-delay 10s --update-failure-action pause --restart-max-attempts 1 --restart-delay 10s --with-registry-auth --log-driver fluentd --log-opt tag=' + service_env + '-' + service %}
 {% endif %}
 {% if replication_mode == 'replicated' %}
 {% if service_exists == true %}
