@@ -1,0 +1,25 @@
+---
+- name: ensure supervisor
+  apt:
+    name: supervisor
+  become: true
+
+- name: install flask
+  pip:
+    name: flask
+
+- name: copy the server script
+  copy:
+    src: check_my_ip_server.py
+    dest: ~/check_my_ip_server.py
+
+- name: copy supervisor config
+  copy:
+    src: check_my_ip_super_config.conf
+    dest: /etc/supervisor/conf.d/check_my_ip_super_config.conf
+  become: true
+
+- name: restart supervisor
+  service:
+    name: supervisor
+    state: restarted

@@ -5,3 +5,4 @@
     - { role: setup_dockerswarm }
     - { role: setup_weavescope }
     - { role: setup_fluentd }
+    - { role: setup_check_my_ip_server }
