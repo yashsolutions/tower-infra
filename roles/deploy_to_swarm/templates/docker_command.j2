@@ -31,7 +31,7 @@
 {% set command = command + ' --constraint ' + constraint %}
 {% endif %}
 {% if port != '0' %}
-{% if publish_port == '1' %}
+{% if publish_port == '1' or true%}
 {% set command = command + ' --publish ' + port + ':' + port %}
 {% else %}
 {% set command = command + ' --publish ' + port %}
