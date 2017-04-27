@@ -8,6 +8,8 @@ elasticsearch-01 ansible_host=10.0.5.8
 elasticsearch-02 ansible_host=10.0.5.4
 prod-elasticsearch-01 ansible_host=10.0.6.4
 jenkins ansible_host=10.0.1.6
+gerrit ansible_host=10.0.1.5
+mongodb01 ansible_host=10.0.1.12
 
 [docker_engine]
 swarm-01
