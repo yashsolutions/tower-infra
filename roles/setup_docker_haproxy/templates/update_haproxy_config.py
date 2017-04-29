@@ -45,9 +45,11 @@ while True:
 
 defaults
         mode http
-        timeout connect 50000ms
+        timeout connect 5000ms
         timeout client  50000ms
         timeout server  50000ms
+	option forwardfor
+        option http-server-close
 
 frontend localhost
         mode http

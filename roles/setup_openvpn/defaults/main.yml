@@ -73,6 +73,7 @@ openvpn_clients:
 - nilesh.khude
 - vishal.suhagiya
 - rajdeo.das
+- mansi.tiwari
 
 openvpn_clients_revoke: []                        # Revoke clients certificates
 
