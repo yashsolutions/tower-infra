@@ -1,0 +1,9 @@
+- hosts: "qa-elasticsearch-01"
+  become: true
+  roles:
+    - { role: setup_elasticsearch, es_instance_name: "qa-elasticsearch-01", es_config: { discovery.zen.ping.unicast.hosts: "10.0.5.9", network.host: "0.0.0.0", cluster.name: "srkay_es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: true } }
+  vars:
+    es_heap_size: "2g"
+    es_cluster_name: "srkay_es"
+
+

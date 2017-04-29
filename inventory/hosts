@@ -10,6 +10,7 @@ prod-elasticsearch-01 ansible_host=10.0.6.4
 jenkins ansible_host=10.0.1.6
 gerrit ansible_host=10.0.1.5
 mongodb01 ansible_host=10.0.1.12
+qa-elasticsearch-01 ansible_host=10.0.5.9
 
 [docker_engine]
 swarm-01
@@ -45,6 +46,15 @@ elasticsearch-01
 [elasticsearch_data_nodes]
 elasticsearch-01
 elasticsearch-02
+
+[qa_elasticsearch]
+qa-elasticsearch-01
+
+[qa_elasticsearch_master_nodes]
+qa-elasticsearch-01
+
+[qa_elasticsearch_data_nodes]
+qa-elasticsearch-01
 
 [prod_elasticsearch]
 prod-elasticsearch-01
