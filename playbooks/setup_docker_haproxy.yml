@@ -1,0 +1,3 @@
+- hosts: docker_engine
+  roles:
+  - setup_docker_haproxy

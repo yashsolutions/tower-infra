@@ -1,0 +1,47 @@
+---
+
+- apt:
+    name: supervisor
+  become: true
+
+- apt:
+    name: haproxy
+  become: true
+
+- debug: var=hostvars[groups['docker_swarm_manager'][0]]['ansible_eth0']['ipv4']['address']
+  register: swarm_master_ip
+
+- debug: var=hostvars[groups['prod_docker_swarm_manager'][0]]['ansible_eth0']['ipv4']['address']
+  register: prod_swarm_master_ip
+
+- set_fact:
+    swarm_master: "{{ swarm_master_ip[\"hostvars[groups['docker_swarm_manager'][0]]['ansible_eth0']['ipv4']['address']\"] }}"
+  when: "'docker_engine' in group_names"
+
+- set_fact:
+    swarm_master: "{{ prod_swarm_master_ip[\"hostvars[groups['prod_docker_swarm_manager'][0]]['ansible_eth0']['ipv4']['address']\"] }}"
+  when: "'prod_docker_engine' in group_names"
+
+- template:
+    src: update_haproxy_config.py
+    dest: /home/ansible/update_haproxy_config.py
+    mode: 0555
+  become: true
+
+- copy:
+    src: update_haproxy_config.conf
+    dest: /etc/supervisor/conf.d/update_haproxy_config.conf
+    mode: 0444
+  become: true
+
+- service:
+    name: supervisor
+    enabled: yes
+    state: restarted
+  become: true
+
+- service:
+    name: haproxy
+    enabled: yes
+    state: restarted
+  become: true
