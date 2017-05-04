@@ -1,7 +1,12 @@
 ansible ansible_host=10.0.1.4
 openvpn ansible_host=10.0.4.6
-swarm-01 ansible_host=10.0.2.7
-swarm-02 ansible_host=10.0.2.9
+swarm-01 ansible_host=10.0.2.11
+swarm-02 ansible_host=10.0.2.12
+swarm-03 ansible_host=10.0.2.14
+swarm-04 ansible_host=10.0.2.8
+swarm-05 ansible_host=10.0.2.10
+swarm-06 ansible_host=10.0.2.9
+swarm-07 ansible_host=10.0.2.13
 prod-swarm-01 ansible_host=10.0.3.4
 prod-swarm-02 ansible_host=10.0.3.5
 elasticsearch-01 ansible_host=10.0.5.8
@@ -15,13 +20,22 @@ qa-elasticsearch-01 ansible_host=10.0.5.9
 [docker_engine]
 swarm-01
 swarm-02
+swarm-03
+swarm-04
+swarm-05
+swarm-06
+swarm-07
 
 [docker_swarm_manager]
 swarm-01
 
 [docker_swarm_worker]
-swarm-01
 swarm-02
+swarm-03
+swarm-04
+swarm-05
+swarm-06
+swarm-07
 
 [prod_docker_engine]
 prod-swarm-01
