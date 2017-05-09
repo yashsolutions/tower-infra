@@ -1,3 +1,5 @@
 - hosts: jenkins
+  become: true
   roles:
+  - { role: setup_dockerswarm, skip_swarm: true }
   - setup_jenkins

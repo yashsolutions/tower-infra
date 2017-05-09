@@ -1,5 +1,5 @@
 ---
 
-- hosts: swarm-01
+- hosts: internal-swarm-01
   roles:
   - deploy_to_swarm

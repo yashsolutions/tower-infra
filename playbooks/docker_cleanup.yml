@@ -1,4 +1,4 @@
-- hosts: docker_engine
+- hosts: docker_engine, jenkins
   tasks:
   - name: cleanup containers
     command: bash -c 'docker rm -v $(docker ps -a -f status=exited -q)'
