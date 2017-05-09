@@ -1,0 +1,9 @@
+- name: private dns zone
+  route53_zone:
+    aws_access_key: "{{ aws.ansible.key }}"
+    aws_secret_key: "{{ aws.ansible.secret }}"
+    vpc_region: "{{ region }}"
+    zone: ip.
+    state: present
+    vpc_id: '{{ vpc.vpc_id }}'
+    comment: dns for all machines

@@ -1,0 +1,102 @@
+- name: create network
+  ec2_vpc:
+    aws_access_key: "{{ aws.ansible.key }}"
+    aws_secret_key: "{{ aws.ansible.secret }}"
+    region: "{{ region }}"
+    state: present
+    cidr_block: 10.1.0.0/16
+    resource_tags: { "Name": "solitaire" }
+    subnets:
+      - cidr: 10.1.1.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "expose" }
+      - cidr: 10.1.2.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "control-01" }
+      - cidr: 10.1.3.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "control-02" }
+      - cidr: 10.1.4.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "internal-swarm-01" }
+      - cidr: 10.1.5.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "internal-swarm-02" }
+      - cidr: 10.1.6.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "internal-swarm-03" }
+      - cidr: 10.1.7.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "internal-es-01" }
+      - cidr: 10.1.8.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "internal-es-02" }
+      - cidr: 10.1.9.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "internal-es-03" }
+      - cidr: 10.1.10.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "internal-db-01" }
+      - cidr: 10.1.11.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "internal-db-02" }
+      - cidr: 10.1.12.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "internal-lb-01" }
+      - cidr: 10.1.13.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "internal-lb-02" }
+      - cidr: 10.1.14.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "internal-lb-03" }
+      - cidr: 10.1.21.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "prod-swarm-01" }
+      - cidr: 10.1.22.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "prod-swarm-02" }
+      - cidr: 10.1.23.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "prod-swarm-03" }
+      - cidr: 10.1.24.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "prod-es-01" }
+      - cidr: 10.1.25.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "prod-es-02" }
+      - cidr: 10.1.26.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "prod-es-03" }
+      - cidr: 10.1.27.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "prod-db-01" }
+      - cidr: 10.1.28.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "prod-db-02" }
+      - cidr: 10.1.29.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "prod-lb-01" }
+      - cidr: 10.1.30.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "prod-lb-02" }
+      - cidr: 10.1.31.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "prod-lb-03" }
+      - cidr: 10.1.32.0/24
+        az: us-west-2a
+        resource_tags: { "Name": "public-lb-01" }
+      - cidr: 10.1.33.0/24
+        az: us-west-2b
+        resource_tags: { "Name": "public-lb-02" }
+      - cidr: 10.1.34.0/24
+        az: us-west-2c
+        resource_tags: { "Name": "public-lb-03" }
+
+    internet_gateway: True
+    route_tables:
+      - subnets:
+          - 10.1.1.0/24
+        routes:
+          - dest: 0.0.0.0/0
+            gw: igw
+  register: vpc

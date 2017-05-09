@@ -1,0 +1,5 @@
+---
+
+region: us-west-2
+vpc:
+  vpc_id: vpc-bfd5d0d8

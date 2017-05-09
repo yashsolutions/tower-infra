@@ -1,0 +1,13 @@
+- name: Include ssh key definitions
+  include_vars: ../secrets/ssh_keys.yml
+
+- name: create keys
+  ec2_key:
+    aws_access_key: "{{ aws.ansible.key }}"
+    aws_secret_key: "{{ aws.ansible.secret }}"
+    region: "{{ region }}"
+    name: "{{ item.key }}"
+    key_material: "{{ item.value.public }}"
+    state: present
+  with_dict: "{{ ssh_keys }}"
+  no_log: true
