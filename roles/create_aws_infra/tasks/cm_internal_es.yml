@@ -15,8 +15,8 @@
 
 - name: security group for internal-es
   ec2_group:
-    name: internal-swarm
-    description: internal-swarm
+    name: internal-es
+    description: internal-es
     vpc_id: "{{ vpc.vpc_id }}"
     aws_access_key: "{{ aws.ansible.key }}"
     aws_secret_key: "{{ aws.ansible.secret }}"

@@ -51,7 +51,7 @@
     aws_access_key: "{{ aws.ansible.key }}"
     aws_secret_key: "{{ aws.ansible.secret }}"
     region: "{{ region }}"
-    key_name: ansible
+    key_name: bastion
     instance_type: t2.small
     image: ami-efd0428f
     wait: no

@@ -2,9 +2,9 @@
 - name: Include aws ansible credentials
   include_vars: ../secrets/aws.yml
 
-#- include: create_keys.yml
+- include: create_keys.yml
 
-#- include: create_network.yml
+- include: create_network.yml
 
 - include: create_dns_zone.yml
 

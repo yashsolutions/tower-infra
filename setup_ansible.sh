@@ -1,0 +1,42 @@
+#!/bin/bash
+
+sudo apt-get update
+sudo apt-get install -y python-dev python-pip git
+sudo apt-get install software-properties-common
+sudo pip install ansible=2.2.1.0
+sudo useradd -m -d /home/ansible -s /bin/bash ansible
+sudo mkdir /home/ansible/.ssh
+sudo cat >> /home/ansible/.ssh/id_rsa <EOF
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEA96OxHwZP27ujYQW+CAcr1CDeKkjm7XOf7eyn1As/BYzPgfc3
+PHoNN/JK0KLSVzGILIVX22wIhJAhL71fdcBkuDyn/0D/ZEsNpJqaxVTwrMIvx7ZZ
+Y3cIJzbei40HouvhkX0FhttHklAvQoTGh7eQw62INSpoWA736A6S8t8b9Ud86J+4
+pOxMlWDSN82lMctLbUv3tiZov4yRcqi73DkPfAPYsr7bS9kMy7cfMCj6gSWKbXCm
+JI4RH6wXn12Du09Da9w14TueqmbE/JZScAsLyrxlhCTX45JvYQOCIxWu9oTCcNtn
+2sr+SUbGnzQYyr87p0/0qolVorelRoyYi5gGCwIDAQABAoIBADC2xrTvrO3wr2b6
+ljNGFd0YyhtPU/4J7MAE+c7Al5kj5f4O/5Kp/8etpgH8xZvZZow7ftjvG43YPG8D
+ta+YNTf41qNjydmU2g4zS5bd6qpRWMzUlij21WfBZ23URFhMRoc0LM4mfKHPnDxd
+miBAf/2+OTkcKoKID0Ra+ZVFRl6tWll/gLfp5xFlTlnZSU51MIKF4+vcLFUrL5io
+X9rhJAS025mZ1tdbIh0i03xKwx59HhqQditfqVXvEIjoKHINWsBVPljF4caNqocT
+Eug0GDTZUaRNTmyQVqa4Uf7w9dOfVRzuEkF2F8SC+SaIDrS9j9BBwhRosvMvOTbP
+q2tDiqECgYEA+9l4WySbumsUcYpxT/TcOYK0tv9jAcoRTa5t4ayC+2mHI7nKeyHT
+QX1Pv6v8Pe5NIYwvtVoJc4gp2VhBD0CIQeCelpQ29QhZ6DrHmD27RobyzJF6koad
+IYVFZLtLbZmYNuXhqjop9WIRymfc1ylAYSnRbaSItC0gGbznCtrs37UCgYEA+7h1
+t76I/GA5KSxLq2x2W7YzC02EkedF890r1Ht3gpnRIkwq70WLml9iCf0Zw8bd4OdR
+myt28JBF1ACQeVw9qDtqIPfx8jj6BCOh49TsPN3FLey6lEdMdBUcYgv9oXXr0MzC
+UL1LyG828BzyRwQkImq3v9oF4sCb/DUJgquvZr8CgYEAoQrvpkBjgDIGsY/YY0tt
+Iy1MR5RJCBThOa4nP15jp0ZUjui37EK15rOtsh/UvPlLwv70Zt+7GXBhakS/3XPj
+bVSntBv0hH0hmJk1lkkrHq8eROdl3JpNkei5de86DUxhBAG9am+k8u8R9z6w/bi4
+HSlzbMwASk5sr2iWyN8zBt0CgYEAktZZpSP6mO4wqfny8j7FFF7Gi/NeQBZfUhBU
+vxB++KptusofyZASDa1SbW09mFzrlYSasB+8tDwU38Ssgn7yYK64DB9W/euKvNtk
+VpkgbakYmt+bP2AQEy81bWR9QbCeLSEkwSCLkpJ9w7e/BPo/cew64Cl4gXvGAmuV
+7qnkGdUCgYBw2GVMRTLeOQhPAg8Q4OYmatJr5mwYdriarrANfK7RHk6wzhV3Sos4
+fMObN8LWyOFfbZMhKc2SPDE5p8sV6Jt+EVtZP0g53Jb91L3wBOQUy7sK28myu39F
+5G5mghXOgeFaVXkKDPYZ/Z1Pk81bHPWD5VuIPaWI0wtFOkxyoMTzIw==
+-----END RSA PRIVATE KEY-----
+EOF
+sudo chown -R ansible:ansible /home/ansible/.ssh
+sudo chmod 400 /home/ansible/.ssh/id_rsa
+sudo su ansible
+git clone git@gitlab.com:srkaycg/solitaire/ansible-bot.git /home/ansible/ansible
+exit

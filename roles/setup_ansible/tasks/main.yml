@@ -6,11 +6,6 @@
     dest: /home/ansible/ansible
     force: yes
 
-- name: get terraform repo
-  git:
-    repo: 'http://10.0.1.5/terraform-bot'
-    dest: /home/ansible/terraform
-
 - name: install supervisor, redis and python-dev
   apt:
     name: "{{ item }}"
