@@ -1,5 +1,8 @@
 ---
 
+- name: Include keys
+  include_vars: ../secrets/ssh_keys.yml
+
 - name: setup private key
   copy:
     content: "{{ ssh_keys.ansible.private }}"
