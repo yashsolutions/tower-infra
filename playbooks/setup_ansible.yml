@@ -1,4 +1,5 @@
-- hosts: ansible
+- hosts: ansible.ip
+  become: true
   roles:
   - setup_ansible
   - setup_terraform

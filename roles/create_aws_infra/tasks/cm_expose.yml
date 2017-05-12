@@ -61,7 +61,7 @@
     region: "{{ region }}"
     key_name: ansible
     instance_type: t2.small
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: bastion
@@ -134,7 +134,7 @@
     region: "{{ region }}"
     key_name: ansible
     instance_type: t2.small
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: openvpn

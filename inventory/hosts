@@ -1,37 +1,26 @@
-ansible ansible_host=10.0.1.4
-openvpn ansible_host=10.0.4.6
-prod-swarm-01 ansible_host=10.0.3.4
-prod-swarm-02 ansible_host=10.0.3.5
-elasticsearch-01 ansible_host=10.0.5.8
-elasticsearch-02 ansible_host=10.0.5.4
-prod-elasticsearch-01 ansible_host=10.0.6.4
-jenkins ansible_host=10.0.1.6
-gerrit ansible_host=10.0.1.5
-mongodb01 ansible_host=10.0.1.12
-qa-elasticsearch-01 ansible_host=10.0.5.9
-
-[Rancher]
-rancher-swarm-01
-
-[Agents]
-rancher-swarm-01
-rancher-swarm-02
-rancher-swarm-03
+ansible.ip
+gerrit.ip
+openldap.ip
+openvpn.ip
+jenkins.ip
 
 [docker_engine]
-internal-rancher-01
-internal-swarm-01
-internal-swarm-02
+internal-swarm-01.ip
+internal-swarm-02.ip
+internal-swarm-03.ip
+internal-swarm-04.ip
+internal-swarm-05.ip
+internal-swarm-06.ip
 
 [docker_swarm_manager]
-#internal-swarm-01
+internal-swarm-01.ip
 
 [docker_swarm_worker]
-#internal-swarm-02
-#internal-swarm-03
-#internal-swarm-04
-#internal-swarm-05
-#internal-swarm-06
+internal-swarm-02.ip
+internal-swarm-03.ip
+internal-swarm-04.ip
+internal-swarm-05.ip
+internal-swarm-06.ip
 
 [prod_docker_engine]
 prod-swarm-01

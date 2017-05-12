@@ -53,12 +53,12 @@
     region: "{{ region }}"
     key_name: bastion
     instance_type: t2.small
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: ansible
     vpc_subnet_id: "{{ subnet_ids[0] }}"
-    assign_public_ip: yes
+    assign_public_ip: no
     count_tag:
       Name: ansible
     instance_tags:
@@ -132,12 +132,12 @@
     region: "{{ region }}"
     key_name: ansible
     instance_type: t2.small
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: openldap
     vpc_subnet_id: "{{ subnet_ids[0] }}"
-    assign_public_ip: yes
+    assign_public_ip: no
     count_tag:
       Name: openldap
     instance_tags:
@@ -209,12 +209,12 @@
     region: "{{ region }}"
     key_name: ansible
     instance_type: t2.small
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: gerrit
     vpc_subnet_id: "{{ subnet_ids[0] }}"
-    assign_public_ip: yes
+    assign_public_ip: no
     count_tag:
       Name: gerrit
     instance_tags:
@@ -294,12 +294,12 @@
     region: "{{ region }}"
     key_name: ansible
     instance_type: t2.medium
-    image: ami-efd0428f
+    image: "{{ ami }}"
     wait: no
     exact_count: 1
     group: jenkins
     vpc_subnet_id: "{{ subnet_ids[0] }}"
-    assign_public_ip: yes
+    assign_public_ip: no
     count_tag:
       Name: jenkins
     instance_tags:

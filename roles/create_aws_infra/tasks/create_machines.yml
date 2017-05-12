@@ -4,5 +4,5 @@
 - include: cm_control.yml
 - include: cm_internal_swarm.yml
 - include: cm_internal_es.yml
-- include: cm_prod_swarm.yml
-- include: cm_prod_es.yml
+#- include: cm_prod_swarm.yml
+#- include: cm_prod_es.yml
