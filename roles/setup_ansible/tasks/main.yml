@@ -1,8 +1,17 @@
 ---
 
+- name: setup private key
+  copy:
+    content: "{{ ssh_keys.ansible.private }}"
+    dest: /home/ansible/.ssh/id_rsa
+    owner: ansible
+    group: ansible
+    mode: 0400
+  become: true
+
 - name: get ansible repo
   git:
-    repo: 'http://10.0.1.5/ansible-bot'
+    repo: 'git@gitlab.com:srkaycg/solitaire/ansible-bot.git'
     dest: /home/ansible/ansible
     force: yes
 
@@ -32,15 +41,6 @@
   service:
     name: supervisor
     state: restarted
-  become: true
-
-- name: setup private key
-  copy:
-    content: "{{ ssh_keys.ansible.private }}"
-    dest: /home/ansible/.ssh/id_rsa
-    owner: ansible
-    group: ansible
-    mode: 0400
   become: true
 
 - name: add ansible repository
