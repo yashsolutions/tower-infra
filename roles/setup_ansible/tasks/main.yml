@@ -17,6 +17,7 @@
     repo: 'git@gitlab.com:srkaycg/solitaire/ansible-bot.git'
     dest: /home/ansible/ansible
     force: yes
+    accept_hostkey: yes
 
 - name: install supervisor, redis and python-dev
   apt:
