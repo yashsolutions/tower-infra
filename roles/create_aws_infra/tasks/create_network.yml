@@ -5,7 +5,7 @@
     region: "{{ region }}"
     state: present
     cidr_block: 10.1.0.0/16
-    resource_tags: { "Name": "solitaire" }
+    resource_tags: { "Name": "yash" }
     subnets:
       - cidr: 10.1.1.0/24
         az: "{{ region }}a"

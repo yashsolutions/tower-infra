@@ -1,5 +1,5 @@
 ---
-ami: ami-efd0428f
-region: us-west-2
+ami: ami-10547475
+region: us-east-2
 vpc:
-  vpc_id: vpc-bfd5d0d8
+  vpc_id: vpc-6cb19805
