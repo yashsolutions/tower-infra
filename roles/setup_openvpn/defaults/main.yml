@@ -10,7 +10,7 @@ openvpn_use_external_repo: false                    # Enable upstream OpenVPN re
 openvpn_use_system_easyrsa: false                   # Install EasyRSA from system packages
 
 # Default settings (See OpenVPN documentation)
-openvpn_host: "52.172.153.75"              # The server address
+openvpn_host: "13.59.224.211"              # The server address
 openvpn_port: 4200
 openvpn_proto: udp
 openvpn_dev: tun
@@ -48,32 +48,7 @@ openvpn_key_size: 1024
 
 openvpn_clients:
 - client
-- ashish.nanotkar                        # Make clients certificate
-- foram.kapadia
-- bipin.tithe
-- sapna.motwani
-- kesavan.srinivasan
-- sandeep.pagi
-- rajesh.saini
-- anish.gandhi
-- janki.gadhiya
-- shweta.mehta
-- apexa.pate
-- hetal.patel
-- shailesh.yadav
-- dipak.misal
-- ilesh.vithani
-- disha.mehta
-- pooja.thakkar
-- malay.matwankar
-- gautam.vanani
-- kinjal.mori
-- kinnari.jasoliya
-- jayesh.savaliya
-- nilesh.khude
-- vishal.suhagiya
-- rajdeo.das
-- mansi.tiwari
+- ashishn                        # Make clients certificate
 
 openvpn_clients_revoke: []                        # Revoke clients certificates
 
