@@ -24,7 +24,7 @@
 
 - template:
     src: update_haproxy_config.py
-    dest: /home/ansible/update_haproxy_config.py
+    dest: /home/ubuntu/update_haproxy_config.py
     mode: 0555
   become: true
 

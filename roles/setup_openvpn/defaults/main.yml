@@ -10,7 +10,7 @@ openvpn_use_external_repo: false                    # Enable upstream OpenVPN re
 openvpn_use_system_easyrsa: false                   # Install EasyRSA from system packages
 
 # Default settings (See OpenVPN documentation)
-openvpn_host: "13.59.224.211"              # The server address
+openvpn_host: "13.58.182.114"              # The server address
 openvpn_port: 4200
 openvpn_proto: udp
 openvpn_dev: tun
@@ -71,10 +71,4 @@ openvpn_simple_auth_password: ""
 # Whether to embed CA, cert, and key info inside client OVPN config file.
 openvpn_unified_client_profiles: yes
 openvpn_routes:
-  - "10.0.1.0 255.255.255.0"
-  - "10.8.0.0 255.255.255.0"
-  - "10.0.2.0 255.255.255.0"
-  - "10.0.5.0 255.255.255.0"
-  - "10.0.3.0 255.255.255.0"
-  - "10.0.6.0 255.255.255.0"
-  - "10.0.7.0 255.255.255.0"
+  - "10.0.0.0 255.0.0.0"

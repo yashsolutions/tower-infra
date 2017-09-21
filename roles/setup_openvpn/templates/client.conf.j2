@@ -10,7 +10,7 @@ client
 # will not function unless you partially or fully disable the firewall for the
 # TUN/TAP interface.
 dev {{ openvpn_dev }}
-ndbuf 0
+sndbuf 0
 rcvbuf 0
 # Are we connecting to a TCP or UDP server?  Use the same setting as on the
 # server.

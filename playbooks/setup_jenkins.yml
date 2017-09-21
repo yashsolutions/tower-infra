@@ -1,4 +1,4 @@
-- hosts: jenkins
+- hosts: jenkins.ip
   become: true
   roles:
   - { role: setup_dockerswarm, skip_swarm: true }

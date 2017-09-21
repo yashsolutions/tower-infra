@@ -1,16 +1,16 @@
-- hosts: "elasticsearch-01"
+- hosts: "internal-es-01.ip"
   become: true
   roles:
-    - { role: setup_elasticsearch, es_instance_name: "elasticsearch-01", es_config: { discovery.zen.ping.unicast.hosts: "10.0.5.8", network.host: "0.0.0.0", cluster.name: "srkay_es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: true } }
+    - { role: setup_elasticsearch, es_instance_name: "internal-es-01", es_config: { discovery.zen.ping.unicast.hosts: "10.1.7.46", network.host: "0.0.0.0", cluster.name: "internal-es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: true } }
   vars:
     es_heap_size: "2g"
-    es_cluster_name: "srkay_es"
+    es_cluster_name: "internal-es"
 
-- hosts: "elasticsearch-02"
+- hosts: "internal-es-02.ip"
   become: true
   roles:
-    - { role: setup_elasticsearch, es_instance_name: "elasticsearch-02", es_config: { discovery.zen.ping.unicast.hosts: "10.0.5.8", network.host: "0.0.0.0", cluster.name: "srkay_es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: false } }
+    - { role: setup_elasticsearch, es_instance_name: "internal-es-02", es_config: { discovery.zen.ping.unicast.hosts: "10.1.7.46", network.host: "0.0.0.0", cluster.name: "internal-es", http.port: 9200, transport.tcp.port: 9300, node.data: true, node.master: false } }
   vars:
     es_heap_size: "2g"
-    es_cluster_name: "srkay_es"
+    es_cluster_name: "internal-es"
 

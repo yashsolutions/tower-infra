@@ -28,6 +28,15 @@
     update_cache: yes
   become: true
 
+- name: create folder for keys
+  file: 
+    path: /var/lib/jenkins/.ssh 
+    state: directory
+    owner: jenkins
+    group: jenkins
+    mode: 0700
+  become: true
+
 - name: setup private key
   copy:
     content: "{{ ssh_keys.jenkins.private }}"
@@ -45,7 +54,15 @@
     chdir: /var/lib/jenkins
 
 - name: set remote for repo
-  command: git remote set-url origin git@gitlab.com:srkaycg/solitaire/jenkins.git
+  command: git remote add origin git@github.com:yashsolutions/jenkins-backup.git
+  become: true
+  become_user: jenkins
+  args:
+    chdir: /var/lib/jenkins
+  ignore_errors: yes
+
+- name: set remote for repo
+  command: git remote set-url origin git@github.com:yashsolutions/jenkins-backup.git
   become: true
   become_user: jenkins
   args:

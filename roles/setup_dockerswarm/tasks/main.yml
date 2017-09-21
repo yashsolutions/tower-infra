@@ -71,5 +71,5 @@
   ignore_errors: yes
 
 - name: add user to group
-  command: usermod -a -G docker ansible
+  command: usermod -a -G docker ubuntu
   become: true

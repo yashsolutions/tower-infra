@@ -8,9 +8,9 @@ jenkins.ip
 internal-swarm-01.ip
 internal-swarm-02.ip
 internal-swarm-03.ip
-internal-swarm-04.ip
-internal-swarm-05.ip
-internal-swarm-06.ip
+#internal-swarm-04.ip
+#internal-swarm-05.ip
+#internal-swarm-06.ip
 
 [docker_swarm_manager]
 internal-swarm-01.ip
@@ -18,9 +18,9 @@ internal-swarm-01.ip
 [docker_swarm_worker]
 internal-swarm-02.ip
 internal-swarm-03.ip
-internal-swarm-04.ip
-internal-swarm-05.ip
-internal-swarm-06.ip
+#internal-swarm-04.ip
+#internal-swarm-05.ip
+#internal-swarm-06.ip
 
 [prod_docker_engine]
 prod-swarm-01
@@ -34,17 +34,18 @@ prod-swarm-01
 prod-swarm-02
 
 [elasticsearch]
-elasticsearch-01
+internal-es-01.ip
 
 [elasticsearch_master_nodes]
-elasticsearch-01
+internal-es-01.ip
 
 [elasticsearch_master_data_nodes]
-elasticsearch-01
+internal-es-01.ip
 
 [elasticsearch_data_nodes]
-elasticsearch-01
-elasticsearch-02
+internal-es-01.ip
+internal-es-02.ip
+#internal-es-03.ip
 
 [qa_elasticsearch]
 qa-elasticsearch-01
