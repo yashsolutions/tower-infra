@@ -1,0 +1,7 @@
+---
+
+- hosts: ansible.ip
+  tasks:
+  - shell: /home/ubuntu/delphixpy-examples/dx_refresh_db.py --all_vdbs
+    args:
+      chdir: /home/ubuntu/delphixpy-examples

@@ -8,7 +8,7 @@
 
 - name: login into docker registry
   when: docker_registry_login 
-  command: "docker login -u {{ docker_registry_user }} -p {{ docker_registry_pass }} {{ docker_registry_name }}"
+  shell: "$(aws ecr get-login --region us-east-2)"
 
 - name: get available services
   command: docker service list
@@ -33,15 +33,3 @@
 - name: deploying the service
   command: "{{ docker_command }}"
 
-- name: use proper loadbalancer ip
-  set_fact:
-    lb_ip: "{{ internal_lb_ip }}"
-  when: service_env != "prod"
-
-- name: use proper loadbalancer ip
-  set_fact:
-    lb_ip: "{{ prod_lb_ip }}"
-  when: service_env == "prod"
-
-- name: setup the service url
-  command: "{{ lookup('template', 'subdomain_api_call.j2') }}"

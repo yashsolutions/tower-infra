@@ -1,8 +1,3 @@
 ---
 
 docker_registry_login: True
-docker_registry_name: srkay-on.azurecr.io
-docker_registry_user: "{{ docker_registry['user'] }}"
-docker_registry_pass: "{{ docker_registry['pass'] }}"
-prod_lb_ip: 10.0.3.7
-internal_lb_ip: 10.0.2.7
